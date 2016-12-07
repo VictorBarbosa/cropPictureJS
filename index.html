@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/cropImageMain.js"></script>
+    <script src="./scripts/cropImage.js"></script>
+    <link rel="stylesheet" href="./css/cropimage.css">
+</head>
+
+<body>
+    <img id="foto" alt="">
+    <div id="modalFoto"  class="modal fade" role="dialog">
+         
+               <div class="container">
+             <div class="action">
+                <div class="btn-group btn-group-crop" style="margin-bottom: 0px">
+                    <div class="btn-group">
+                        <label class="btn btn-primary btn-upload" for="file" title="Upload image file" id="ui-id-1">
+                        <input type="file" class="sr-only" id="file" name="file" accept="image/*">
+                        <span class="docs-tooltip" data-toggle="tooltip" title="Import image with Blob URLs">
+                            <span class="fa fa-upload"> Pesquisar</span>
+                        </span>
+                    </label>
+                    </div>
+                    <button id="btnCrop" type="button" class="btn btn-primary">
+                    <span class="docs-tooltip" data-toggle="tooltip">
+                        Cortar
+                    </span>
+                </button>
+                    <button id="btnZoomIn" type="button" class="btn btn-primary">
+                    <span class="docs-tooltip" data-toggle="tooltip">
+                       +
+                    </span>
+                </button>
+                    <button id="btnZoomOut" type="button" class="btn btn-primary">
+                    <span class="docs-tooltip" data-toggle="tooltip">
+                       -
+                    </span>
+                </button>
+                </div>
+            </div>
+            <div class="imageBox">
+                <div class="thumbBox"></div>
+                <div class="spinner" style="display: none">Carrengando...</div>
+            </div>
+            <div class="cropped">
+
+            </div> 
+        </div>
+         
+    </div>
+</body>
+</html>

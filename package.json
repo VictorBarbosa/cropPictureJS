@@ -1,0 +1,28 @@
+{
+  "name": "crompimage",
+  "version": "1.0.0",
+  "author": {
+    "name": "victor barbosa",
+    "email": "victor.hugo.p.barbosa@hotmail.com"
+  },
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "exclude": ["node_modules"],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+     "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2" 
+  }
+}
