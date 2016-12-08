@@ -30,4 +30,7 @@ window.onload = function () {
     document.querySelector('#btnZoomOut').addEventListener('click', function () {
         cropper.zoomOut();
     })
+    document.getElementById('addPicture').addEventListener('click',function(){
+          $('#modalFoto').modal('toggle');
+    })
 }; 

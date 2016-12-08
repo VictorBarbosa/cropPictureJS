@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <img id="foto" alt="">
+    <img style="margin-left: auto;margin-right: auto;display: block;" id="foto" alt=""><br>
+     <a  style="display: block;text-align: center;" id="addPicture"  href="#">>>>Add Picture Here<<<<<</a>
     <div id="modalFoto"  class="modal fade" role="dialog">
          
                <div class="container">
@@ -30,13 +31,13 @@
                         <label class="btn btn-primary btn-upload" for="file" title="Upload image file" id="ui-id-1">
                         <input type="file" class="sr-only" id="file" name="file" accept="image/*">
                         <span class="docs-tooltip" data-toggle="tooltip" title="Import image with Blob URLs">
-                            <span class="fa fa-upload"> Pesquisar</span>
+                            <span class="fa fa-upload"> Search</span>
                         </span>
                     </label>
                     </div>
                     <button id="btnCrop" type="button" class="btn btn-primary">
                     <span class="docs-tooltip" data-toggle="tooltip">
-                        Cortar
+                        Crop
                     </span>
                 </button>
                     <button id="btnZoomIn" type="button" class="btn btn-primary">
